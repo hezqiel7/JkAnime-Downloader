@@ -7,7 +7,7 @@
   "content_scripts": [
     {
       "matches": ["https://jkanime.net/*"],
-      "js": ["content_script.js"]
+      "js": ["content.js"]
     }
   ],
   "browser_action": {
