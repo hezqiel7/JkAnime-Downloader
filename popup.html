@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JkAnime Downloader</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
+
+    *{margin: 0px; padding: 0px}
+
+    body{
+      background:#2c3e50;
+      font-family: 'Open Sans', sans-serif;
+      padding: 20px;
+    }
+
+    #downloadButton {
+      background-color: #195dc4;
+      padding: 15px;
+      font-size: 20px;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      transition: background-color 0.1s ease-in;
+    }
+
+    #downloadButton:hover {
+      background-color: #06aadb;
+      cursor: pointer;
+    }
+
+    #downloadButton:active {
+      background-color: #16da6e;
+      transition: background-color 0.01s ease-out
+    }
+  </style>
+</head>
+<body>
+  <button id="downloadButton" class="button-three">Descargar</button>
+  <script src="popup.js"></script>
+</body>
+</html>

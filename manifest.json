@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "JkAnime Downloader",
+  "version": "1.0",
+  "description": "Descargar un Anime entero de JkAnime",
+  "permissions": ["activeTab", "downloads"],
+  "content_scripts": [
+    {
+      "matches": ["https://jkanime.net/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16": "favicon-16x16.png",
+    "32": "favicon-32x32.png",
+    "48": "favicon-48x48.png",
+    "128": "favicon-128x128.png"
+  }
+}
