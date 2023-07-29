@@ -40,6 +40,7 @@ async function fetchEpisode(episode_url) {
 
 async function runDownload(animeName, desde, hasta) {
   let flag_error = false;
+  if (hasta === "") hasta = 2000;
   while (!flag_error && desde <= hasta) {
     let episode_url = `https://jkanime.net/${animeName}/${desde}/`;
     console.log(episode_url);
