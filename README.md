@@ -1,13 +1,14 @@
 
 # JkAnime Downloader
 
-Extensión muy sencilla para descargar varios capítulos del sitio web jkanime.net de forma rápida. Con un solo clic, podrás descargar desde el capítulo en el que te encuentras actualmente hasta el final del anime que estés viendo.
+Extensión muy sencilla para descargar varios capítulos del sitio web jkanime.net de forma rápida. Podrás descargar un rango de capítulos del anime en el que estás actualmente.
 
 ## Cómo usar
 
-1. Ve al sitio web jkanime.net y asegúrate de estar en el capítulo del anime que deseas descargar.
+1. Ve al sitio web jkanime.net y asegúrate de estar en el anime que deseas descargar.
 2. Haz clic en el botón de la extensión en la barra de herramientas del navegador.
-3. La descarga comenzará automáticamente desde el capítulo actual hasta el final de la serie.
+3. Selecciona el rango de capítulos para descargar
+4. La descarga comenzará automáticamente, si quieres descargar todos los capitulos de una vez, desactiva la opción "Preguntar dónde se guardará cada archivo antes de descargarlo" de tu navegador.
 
 ## Instalación
 
