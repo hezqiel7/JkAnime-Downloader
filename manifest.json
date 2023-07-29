@@ -3,7 +3,8 @@
   "name": "JkAnime Downloader",
   "version": "1.0",
   "description": "Descargar un Anime entero de JkAnime",
-  "permissions": ["activeTab", "downloads"],
+  "permissions": ["downloads"],
+  "host_permissions": ["https://jkanime.net/*"],
   "content_scripts": [
     {
       "matches": ["https://jkanime.net/*"],

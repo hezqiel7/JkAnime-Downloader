@@ -38,22 +38,18 @@ async function fetchEpisode(episode_url) {
   }
 }
 
-async function runDownload() {
-  const currentUrl = window.location.href.split("/");
-  let episode = currentUrl[4];
-  const anime_name = currentUrl[3];
+async function runDownload(animeName, desde, hasta) {
   let flag_error = false;
-
-  while (!flag_error) {
-    let episode_url = `https://jkanime.net/${anime_name}/${episode}/`;
+  while (!flag_error && desde <= hasta) {
+    let episode_url = `https://jkanime.net/${animeName}/${desde}/`;
     console.log(episode_url);
     flag_error = await fetchEpisode(episode_url);
-    episode++;
+    desde++;
   }
 }
 
-chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "runDownload") {
-    runDownload();
+    runDownload(message.animeName, message.desde, message.hasta);
   }
 });
