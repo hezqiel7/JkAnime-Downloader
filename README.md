@@ -1,7 +1,9 @@
-
 # JkAnime Downloader
 
 Extensión muy sencilla para descargar varios capítulos del sitio web jkanime.net de forma rápida. Podrás descargar un rango de capítulos del anime en el que estás actualmente.
+
+> [!WARNING]
+> Dejó de funcionar debido a cambios en JkAnime
 
 ## Cómo usar
 
